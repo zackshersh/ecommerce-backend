@@ -34,7 +34,7 @@ router.post('/', (req, res) => {
   // create a new category
   Category.create(req.body)
     .then((category) => {
-      res.status(200).json(tag)
+      res.status(200).json(category)
     })
     .catch((err) => {
       console.log(err);
